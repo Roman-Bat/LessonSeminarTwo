@@ -5,3 +5,16 @@
 782    --> 8
 918    --> 1
 *********************************************************************************************/
+Console.WriteLine("Введите трёхзначное число: ");
+string strnumber = Console.ReadLine();
+int number = Convert.ToInt32(strnumber);
+if (number < 100 || number >= 1000)
+{
+ Console.WriteLine("Вы ввели неверное число");
+}
+else
+{
+ int TwoPairNumber = number / 10;
+ int FinalNumber = TwoPairNumber % 10;
+ Console.WriteLine("Второй разряд числа: " + FinalNumber);
+}
